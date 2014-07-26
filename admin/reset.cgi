@@ -37,6 +37,6 @@ def content(settings):
 
 
 cgitb.enable()
-settings = Settings('/etc/admin/settings.yaml')
+settings = Settings('../settings.yaml')
 body = {'body': content(settings=settings)}
 print template % body

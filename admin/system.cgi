@@ -12,7 +12,7 @@ cgitb.enable()
 
 
 def main():
-    settings = Settings('/etc/admin/settings.yaml')
+    settings = Settings('../settings.yaml')
 
     form = cgi.FieldStorage() 
     if form.getvalue('action'):
