@@ -1,0 +1,91 @@
+### 
+## Command matrix settings file
+###
+
+admins:
+  - admin
+  - api
+
+system:
+  01_reboot:
+      name: Reboot Pi
+      command: reboot
+      title: Run reboot 
+      id: DSTnaregsrsrhstrh543TWQ
+
+  02_shutdown:
+      name: Shutdown Pi
+      command: shutdown -h now
+      title: Run shutdown
+      id: DSTnsrhstrw4ygerathfh543TWQ
+
+  03_reset_hdmi:
+      name: Reset HDMI
+      command: /opt/vc/bin/tvservice -o && /opt/vc/bin/tvservice -p
+      title: Reset HDMI
+      id: DSTnsrhstrh543TWQ3q5yq3gergvzd
+
+  04_turn_off_hdmi:
+      name: Turn Off HDMI
+      command: /opt/vc/bin/tvservice -o
+      title: Turn Off HDMI
+      id: DSTnsrhstrh543TWQ3q5yq3gergvzdesrgaer
+
+  05_turn_on_hdmi:
+      name: Turn On HDMI
+      command: /opt/vc/bin/tvservice -p
+      title: Turn On HDMI
+      id: DSTnsrhstrh543TWQ3q5yq3gergvzdertg
+
+commands:
+    01_script_one:
+      name: Process list
+      command: ps -ef
+      title: Run ps -ef
+      id: DSTnsrhstrh543TWQ
+   
+    02_script_two:
+      name: Show kernel version
+      command: uname -a
+      title: Run uname -a
+      id: ASRferGdfzf34waergerstg
+      
+    03_script_three:
+      name: Get logged in users
+      command: w
+      title: Run w
+      id: ESRGae4RGser5g43
+      
+    04_script_four:
+      name: Print kernel logbuffer
+      command: sudo dmesg
+      title: Run dmesg
+      id: ERGe5rg4e5rgrthr56ea
+      
+    05_script_five:
+      name: Get directory listing
+      command: find . 
+      title: Run find .
+      id: EGer5g5rthsx
+
+links:
+    06_link_to_something_six:
+      name: Flip's Personal Webpage
+      link: https://fliphess.com
+      
+    07_link_to_something_seven:
+      name: Flip's github
+      link: https://github.com/fliphess
+      
+    08_link_to_something_eight:
+      name: My Photo Page
+      link: https://www.facebook.com/FlipHessPhotography
+      
+    09_link_to_something_nine:
+      name: The raspberry website
+      link: http://www.raspberrypi.org/
+      
+    10_link_to_something_ten:
+      name: The Raspian website
+      link: http://www.raspbian.org/
+      
